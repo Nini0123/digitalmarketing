@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-seri
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    box-shadow: 0px 0px 5px 1px grey;
+}
+header div img{
+    margin-right: 300px;
+}
+ul
+{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+li{
+    padding: 0 20px;
+}
+li a{
+    text-decoration: none;
+    color: grey;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: inline-block;
+}
+li a::after{
+    content: " ";
+    width: 0;
+    display: block;
+    height: 4px;
+    background: rgb(30, 4, 59);
+    transition: all 0.5s;
+}
+li a:hover::after{
+    width: 100%;
+}
+#sign-btn{
+    background: rgb(30, 4, 59);
+    border-radius: 50px;
+    padding: 5px 10px;
+    color: grey;
+    font-weight: 600;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 70px);
+}
+.content-left{
+    width: 30%;
+    letter-spacing:1px;
+}
+h1{
+    color: rgb(30, 4, 59);
+    font-size: 35px;
+    font-weight: 600;
+}
+h3{
+    color: rgb(241, 129, 30);
+    font-weight: 400;
+    line-height: 30px;
+}
+p{
+    font-size: 15px;
+}
+#cta{
+    border: none;
+    outline: none;
+    background: rgb(30, 4, 59);
+    padding: 15px;
+    font-size: 17px;
+    margin-top: 25px;
+    border-radius: 50px;
+    color: grey;
+    cursor: pointer;
+}
+.body{
+    background: linear-gradient(135deg,red,blue);
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    position: absolute;
+    top: 100px;
+    left: 450px;
+    background: rgba(255, 255, 255, 0.274);
+    border: 1px solid rgba(255, 255, 255, 0.445);
+    border-radius: 10px;
+    height: fit-content;
+}
+form{
+    margin: 30px;
+    width: 300px;
+}
+.form-container{
+    margin-bottom: 20px;
+}
+.form-container h1{
+    color: rgb(78, 15, 150);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.form-container .input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: antiquewhite;
+    margin-top: 20px;
+    height: 35px;
+    border-radius: 10px;
+}
+.input input{
+    flex: 1;
+    margin-left: 10px;
+    border: none;
+    outline: 0;
+    background: transparent;
+}
+.input i{
+    color: rgba(61, 53, 53, 0.192);
+    margin-left: 10px;
+}
+.form-container p{
+    font-size: 13px;
+    margin-top: 10px;
+    color: white;
+}
+.form-container p a{
+    text-decoration: none;
+    color: black;
+}
+.btn-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+button{
+    outline: 0;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+}
+.signup-btn{
+    background-color: transparent;
+}
